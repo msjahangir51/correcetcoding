@@ -1,0 +1,114 @@
+.Service{
+    width: 100%;
+    height:auto;
+    background: linear-gradient(to bottom , #010921b5, #000000ca), url(../images/service.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    color:#ffff;
+    padding: 10rem 0;
+}
+
+.Service h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    font-weight: 500;
+}
+
+
+
+.service-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    justify-content: center;
+    padding: 3rem 2rem;
+    max-width: 100%;
+    width: 40rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.5s ease    ;
+}
+
+.service-box:hover{
+    box-shadow: 0 0 2rem #ffffff6b;
+}
+
+.service-box svg{
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: rgb(238, 255, 0);
+}
+
+.service-box h3{
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.service-box p{
+    text-align: justify;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.service-box p::first-letter{
+    margin-left: 1rem;
+}
+
+.service-box a{
+    /* background-color: #fff; */
+    color:#fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding: 0.5rem 4rem;
+    margin-top: 3rem;
+    /* background-color: #353434; */
+    background-color: transparent;
+    border: 0.18rem solid #fff;
+    border-radius: 2rem;
+    transition: all 0.3s;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.service-box a:hover{
+    background-color: #ffff;
+    border-color: #353434;
+    color: #000;
+}
+
+/* responsite  */
+@media screen and (max-width:578px) {
+    .Service h1{
+        font-size: 2.7rem;
+    }
+
+    .service-box h3{
+        font-size: 2.4rem;
+    }
+}
+@media screen and (max-width:470px) {
+    .service-box {
+        width: 35rem;
+    }
+
+    .service-box a{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .service-box {
+        width: 25rem;
+    }
+}

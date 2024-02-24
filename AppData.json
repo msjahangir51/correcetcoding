@@ -1,0 +1,24 @@
+[
+    {
+        "id" : "1",
+        "Title" : "web design",
+        "description" :" HTML CSS React JS Project And These sites are demo sites",
+        "link" : "https://finexo12.netlify.app/",
+        "images" : "./src/assets/images/Project_1.png" 
+    },
+    {
+        "id" : "2",
+        "Title" : "web design",
+        "description" :" HTML CSS React JS Project And These sites are demo sites",
+        "link" : "https://caregive.netlify.app/",
+        "images" : "./src/assets/images/Project_2.png"
+    },
+    {
+        "id" : "3",
+        "Title" : "web design",
+        "description" :" HTML CSS JavaScript Project And These sites are demo sites",
+        "link" : "https://creativedesign97.netlify.app/",
+        "images" : "./src/assets/images/Project_3.png"
+    }
+
+]

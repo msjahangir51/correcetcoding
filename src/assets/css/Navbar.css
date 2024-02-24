@@ -1,0 +1,112 @@
+.navbar {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background: linear-gradient(to bottom, #16155e90,#16155e7d), url(../images/hero.jpg); */
+    /* background-color: #212741; */
+    transition: background-color 0.2s ease;
+    z-index: 99;
+}
+.navbar.active{
+    background-color: #212741;
+}
+.navbar.active2{
+    position: fixed;
+    background-color: #212741;
+}
+.navbar a.Logo{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+.navbar a.Logo span{
+    font-weight: 700;
+    color: #0059ff;
+}
+.navbar .nav{
+    display: flex;
+}
+.navbar .nav li a{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin:0 2rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.navbar .nav li a.active{
+    color: #0059ff;
+}
+
+.navbar .bars{
+    display: none;
+}
+@media screen and (max-width:1022px) {
+    .navbar a.Logo{
+        font-size: 2.3rem;
+    }
+    .navbar .nav li a {
+        margin: 0 1rem;
+        font-size: 1.4rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:842px) {
+    .navbar a.Logo{
+        font-size: 2.1rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+    }
+
+    .navbar .nav li a{
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .navbar a.Logo{
+        font-size: 1.8rem;
+    }
+    .navbar .bars{
+        display: block;
+    }
+
+    .navbar .nav{
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        top: 6.6rem;
+        left: 0;
+        right: 0;
+        background-color: #212741;
+        /* background: linear-gradient(to bottom, #16155e90,#16155e7d), url(../images/hero.jpg); */
+        text-align: center;
+        padding: 0;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.3s;
+    }
+    .navbar .nav.active{
+        height:70vh;
+    }
+
+    .navbar .nav li a{
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin:1rem 0;
+    }
+}

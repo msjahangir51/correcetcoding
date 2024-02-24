@@ -1,0 +1,175 @@
+.contactus{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9rem 0;
+    /* justify-content: space-around; */
+    position: relative;
+    
+}
+
+.contactus .Contactus_heading{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.contactus .Contactus_heading span{
+    color: rgba(233, 166, 10, 0.796);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+
+.contactus form{
+    margin-top: 7rem;
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(0, 0, 255, 0.132);
+    padding:5rem 6rem;
+    border-radius: 2rem;
+}
+
+.contactus form input{
+    padding: 0.6rem 1rem;
+    width: 100%;
+    height:4rem;    
+    border:none;
+    border-radius: 0.2rem;
+    outline:none;
+    margin:1rem 0;
+}
+
+
+.contactus form input:focus{
+    border:0.15rem solid rgb(11, 65, 214);
+}
+.contactus form textarea{
+    width: 100%;
+    height: 15rem;
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    resize: none;
+    margin: 2rem 0;
+}
+
+.contactus form textarea:focus{
+    border:0.15rem solid rgb(11, 65, 214)
+}
+
+.SubmitBTN{
+    background-color: rgb(11, 65, 214);
+    color: #fff;
+    text-transform:uppercase;
+    font-size: 1.6rem;
+    letter-spacing:0.3rem;
+    font-weight:600;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.SubmitBTN:hover{
+    background-color: rgb(9, 52, 172);
+}
+
+
+/* SMS_SEND BTN */
+
+.SMS_SEND_SUCCESS{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height:100vh;
+    /* display:flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.SMS_SEND_SUCCESS.active{
+    display: flex;
+}
+
+
+
+.POPUP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    background-color: rgba(255, 157, 0, 0.069);
+    height: auto;
+    padding: 2rem;
+    border-radius: 0.7rem;
+}
+.POPUP svg{
+    color: rgb(28, 197, 28);
+    font-size: 7rem;
+    margin: 1rem auto;
+}
+
+.POPUP h1{
+    font-size:3rem ;
+}
+.POPUP p{
+    font-size: 1.8rem;
+}
+
+.POPUP a{
+    font-size: 2rem;
+    color:crimson;
+    font-weight: 700;
+}
+
+
+/* responsive  */
+
+@media screen and (max-width:1052px) {
+    .contactus form{
+        width: 58%;
+    }
+}
+
+@media screen and (max-width:898px) {
+    .contactus form{
+        width: 66%;
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width:726px) {
+    .contactus form{
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width:532px) {
+    
+    .contactus form{
+        width:88%;
+    }
+}
+@media screen and (max-width:450px){
+    .POPUP svg{
+        font-size: 5.5rem;
+    }
+    .POPUP h1{
+        font-size: 2.2rem;
+    }
+    .POPUP p{
+        font-size: 1.4rem;
+    }
+
+    .POPUP a{
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,165 @@
+.Home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom , #02013a5d ,rgba(8, 0, 0, 0.389)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    position:relative;
+}
+
+.Home::before{
+    content: "2024";
+    position:absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing:0.4rem;
+    transform: rotate(-90deg);
+    right:2rem;
+}
+.Home::after{
+    position:absolute;
+    content: "correct coding";
+    font-size: 1.6rem;
+    color:#fff;
+    left: -7rem;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    transform:rotate(270deg);
+    font-weight: 300;
+}
+.Home h4{
+    font-size: 3rem;
+    letter-spacing:0.2rem;
+    color:#fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+
+.Home h1{
+    /* margin-top: 1rem; */
+    /* font-family: sans-serif; */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 6rem;
+    color:#fff;
+}
+
+.Home p{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+
+}
+
+.Home a.btn{
+    margin-top: 3rem;
+    padding: 0.8rem 4rem;
+    font-weight:500;
+    letter-spacing: 0.2rem;
+    color: #000;
+    font-size: 1.6rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    border-bottom-right-radius: 0;
+    border: 0.18rem solid #fff;
+    /* transition   : background-color 0.5s; */
+}
+.Home a.btn:hover{
+    background-color: transparent;
+    color:#fff;
+}
+
+
+/* responsive  */
+@media screen and (max-width:980px) {
+    .Home h4{
+        font-size: 2.6rem;
+    }   
+
+    .Home h1{
+        font-size: 5.5rem;
+    }
+}
+
+@media screen and (max-width:848px) {
+    .Home h4{
+        font-size: 2.2rem;
+    }
+    .Home h1{
+        font-size: 4.7rem;
+    }
+
+    .Home p{
+        font-size: 1.8rem;
+    }
+
+    .Home a.btn{
+        padding: 0.6rem 3.1rem;
+        font-size: 1.4rem;
+    }
+
+    .Home::before{
+        font-size: 1.4rem;
+    }
+
+    .Home::after{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:714px) {
+    .Home h4{
+        font-size: 2rem;
+    }
+    .Home h1{
+        font-size: 4.3rem;
+    }
+    .Home p{font-size: 1.6rem;}
+    .Home a.btn{
+        font-size: 1.3rem;
+        padding:0.4rem 2.8rem;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .Home{
+        background-position: center;
+    }
+    .Home h4{
+        font-size: 1.8rem;
+    }
+    .Home h1{
+        font-size: 3.2rem;
+    }
+
+    .Home P{
+        font-size:1.3rem;
+    }
+    .Home a.btn{
+        padding: 0.5rem 2.5rem;
+        font-size: 1.3rem;
+    }
+    .Home::after{
+        font-size: 1.2rem;
+    }
+    .Home::before{
+        transform: translateX(1rem) rotate(-90deg);
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .Home h1{
+        width: 80%;
+        font-size: 2.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,91 @@
+.skills{
+    width:100%;
+    height: auto;
+    background-color:#fff;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    padding-top: 12rem;
+}
+.skills h1{
+    font-size: 4rem;
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing: 0.2rem;
+}
+
+.skills h1 span{
+    color: rgba(233, 166, 10, 0.796);
+}
+.skills .description{
+    width: 70%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+.skills .row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 7rem;
+    row-gap: 5rem;
+    column-gap: 6rem;
+    margin-top: 5rem;
+}
+.skills .row .box{
+    /* flex:  0 0 25%; */
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    transition: box-shadow 0.5s;
+}
+
+.skills .row .box p{
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.skills .row .box div{
+    background: #353434;
+    width: 11rem;
+    height: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 50%;
+    transition: background-color 0.4s;
+    position: relative;
+}
+.skills .row .box div:hover{
+    box-shadow: 0 0 3rem #00000043;
+    
+}
+.skills .row .box:hover div{
+    background-color: rgba(233, 166, 10, 0.796);
+}
+
+/* responsive */
+@media screen and (max-width:1078px) {
+    .skills h1{
+        font-size: 3.2rem;
+    }
+    .skills .row .box p{
+        font-size: 1.5rem;
+    }
+    
+}
+@media screen and (max-width:674px) {
+
+    .skills h1{
+        font-size: 3rem;
+    }
+
+    .skills .description{
+        font-size: 1.6rem;
+        width: 90%;
+    }
+}
+

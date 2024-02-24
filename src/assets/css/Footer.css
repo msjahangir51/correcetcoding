@@ -1,0 +1,30 @@
+.footerBody{
+    height: 6rem;
+    background-color: #212741;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerBody p{
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+@media screen and (max-width:774px) {
+    .footerBody p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .footerBody p{
+        font-size:1.1rem;
+    }
+}
+@media screen and (max-width:354px) {
+    .footerBody p{
+        font-size:1rem;
+    }
+}
