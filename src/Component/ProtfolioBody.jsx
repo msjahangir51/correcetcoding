@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { require} from 'react';
 import {v4 as uuidb4} from "uuid";
 import "../assets/css/Protfolio.css";
 
@@ -19,7 +19,7 @@ function ProtfolioBody() {
                 ProtFolioData.map((item)=>{
                     return(
                         <div className="card">
-                            <img src={item.images} className='imgCls' draggable="false"/>
+                            <img src={`${item.images}`} className='imgCls' draggable="false"/>
                             <div className="card-inside">
                                 <p className='Title'>{item.Title}</p>
                                 <p className='description'>{item.description}</p>
