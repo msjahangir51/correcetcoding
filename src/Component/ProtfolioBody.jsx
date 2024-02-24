@@ -7,28 +7,46 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 // icons
 
 
-import ProtFolioData from "../../AppData.json";
 
+
+import img1 from "../assets/images/Project_1.png"
+
+import img2 from "../assets/images/Project_2.png"
+
+import img3 from "../assets/images/Project_3.png"
 // import { ProtFolioData } from '..';
 function ProtfolioBody() {
   return (
     <div className="Protfolio_body">
         <h1 className='Protfolio_heading'>Letest <span>Projects</span></h1>
         <div className="cards">
-            {
-                ProtFolioData.map((item)=>{
-                    return(
                         <div className="card">
-                            <img src={`${item.images}`} className='imgCls' draggable="false"/>
+                            <img src={`${img1}`} className='imgCls' draggable="false"/>
                             <div className="card-inside">
-                                <p className='Title'>{item.Title}</p>
-                                <p className='description'>{item.description}</p>
-                                <a href={item.link} target='_blank'><FaExternalLinkAlt/></a>
+                                <p className='Title'>web design</p>
+                                <p className='description'>HTML CSS React JS Project And These sites are demo sites</p>
+                                <a href="https://finexo12.netlify.app/" target='_blank'><FaExternalLinkAlt/></a>
                             </div>
                         </div>
-                    )
-                })
-            }
+
+                        <div className="card">
+                            <img src={`${img2}`} className='imgCls' draggable="false"/>
+                            <div className="card-inside">
+                                <p className='Title'>web design</p>
+                                <p className='description'>HTML CSS React JS Project And These sites are demo sites</p>
+                                <a href="https://caregive.netlify.app/" target='_blank'><FaExternalLinkAlt/></a>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={`${img3}`} className='imgCls' draggable="false"/>
+                            <div className="card-inside">
+                                <p className='Title'>web design</p>
+                                <p className='description'>HTML CSS JavaScript Project And These sites are demo sites</p>
+                                <a href="https://creativedesign97.netlify.app/" target='_blank'><FaExternalLinkAlt/></a>
+                            </div>
+                        </div>
+                    
         </div>
     </div>
   )
