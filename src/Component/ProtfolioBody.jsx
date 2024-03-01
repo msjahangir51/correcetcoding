@@ -5,7 +5,7 @@ import "../assets/css/Protfolio.css";
 // swiper link 
 import { FaExternalLinkAlt } from "react-icons/fa";
 // icons
-import ProtfolioData from "../assets/AppData.json";
+import ProtfolioData from "../../public/AppData.json";
 console.log(ProtfolioData)
 // import { ProtFolioData } from '..';
 function ProtfolioBody() {
