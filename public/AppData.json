@@ -4,28 +4,28 @@
         "Title" : "web design",
         "description" :" HTML CSS React js Project And These sites are demo sites",
         "link" : "https://demoprotfolio.netlify.app/",
-        "images" : "../../public/Images/Project_4.png" 
+        "images" : "./Images/Project_4.png"
     },
     {
         "id" : "3",
         "Title" : "web design",
         "description" :" HTML CSS React JS Project And These sites are demo sites",
         "link" : "https://finexo12.netlify.app/",
-        "images" : "../../public/Images/Project_1.png" 
+        "images" : "./Images/Project_3.png"
     },
     {
         "id" : "2",
         "Title" : "web design",
         "description" :" HTML CSS React JS Project And These sites are demo sites",
         "link" : "https://caregive.netlify.app/",
-        "images" : "../../public/Images/Project_2.png" 
+        "images" : "./Images/Project_2.png"
         },
         {
         "id" : "1",
         "Title" : "web design",
         "description" :" HTML CSS JavaScript Project And These sites are demo sites",
         "link" : "https://creativedesign97.netlify.app/",
-        "images" : "../../public/Images/Project_3.png" 
+        "images" : "./Images/Project_1.png"
     }
 
 ]
